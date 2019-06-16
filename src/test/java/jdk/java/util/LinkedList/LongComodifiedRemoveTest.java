@@ -37,13 +37,13 @@ import java.util.ListIterator;
 
 public class LongComodifiedRemoveTest {
     @Test
-    public static void main() {
+    public void main() {
         LongLinkedList list = new LongLinkedList();
         Long o1 = new Long((long) 1);
         list.add(o1);
         ListIterator e = list.listIterator();
         e.next();
-        Long o2 = new Long(2);
+        Long o2 = new Long((long) 0);
         list.add(o2);
 
         try {

@@ -37,13 +37,13 @@ import java.util.ListIterator;
 
 public class ShortComodifiedRemoveTest {
     @Test
-    public static void main() {
+    public void main() {
         ShortLinkedList list = new ShortLinkedList();
         Short o1 = new Short((short) 1);
         list.add(o1);
         ListIterator e = list.listIterator();
         e.next();
-        Short o2 = new Short(2);
+        Short o2 = new Short((short) 0);
         list.add(o2);
 
         try {

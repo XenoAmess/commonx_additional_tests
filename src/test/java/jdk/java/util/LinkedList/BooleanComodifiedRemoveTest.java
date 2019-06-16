@@ -37,13 +37,13 @@ import java.util.ListIterator;
 
 public class BooleanComodifiedRemoveTest {
     @Test
-    public static void main() {
+    public void main() {
         BooleanLinkedList list = new BooleanLinkedList();
         Boolean o1 = new Boolean(true);
         list.add(o1);
         ListIterator e = list.listIterator();
         e.next();
-        Boolean o2 = new Boolean(2);
+        Boolean o2 = new Boolean(true);
         list.add(o2);
 
         try {

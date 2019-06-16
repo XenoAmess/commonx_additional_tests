@@ -32,6 +32,7 @@ import com.xenoamess.commons.primitive.collections.lists.array_lists.LongArrayLi
 import com.xenoamess.commons.primitive.collections.lists.linked_lists.LongLinkedList;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -44,7 +45,17 @@ public class LongAddAllTest {
         LongList l2 = new LongLinkedList(head);
         l1.addAll(tail);
         l2.addAll(tail);
-        if (!l1.equals(l2))
-            throw new RuntimeException("addAll is broken.");
+        assert (l1.equals(l2));
+        assert (l2.equals(l1));
+        l1.addAll(l1);
+        l2.addAll(l2);
+        assert (l1.equals(l2));
+        assert (l2.equals(l1));
+        ArrayList t1 = new ArrayList();
+        t1.addAll(l1);
+        l1.addAll(l2);
+        l2.addAll(t1);
+        assert (l1.equals(l2));
+        assert (l2.equals(l1));
     }
 }

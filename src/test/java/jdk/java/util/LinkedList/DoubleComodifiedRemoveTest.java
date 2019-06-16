@@ -37,13 +37,13 @@ import java.util.ListIterator;
 
 public class DoubleComodifiedRemoveTest {
     @Test
-    public static void main() {
+    public void main() {
         DoubleLinkedList list = new DoubleLinkedList();
         Double o1 = new Double((double) 1);
         list.add(o1);
         ListIterator e = list.listIterator();
         e.next();
-        Double o2 = new Double(2);
+        Double o2 = new Double((double) 0);
         list.add(o2);
 
         try {

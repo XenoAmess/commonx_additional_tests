@@ -37,13 +37,13 @@ import java.util.ListIterator;
 
 public class ByteComodifiedRemoveTest {
     @Test
-    public static void main() {
+    public void main() {
         ByteLinkedList list = new ByteLinkedList();
         Byte o1 = new Byte((byte) 1);
         list.add(o1);
         ListIterator e = list.listIterator();
         e.next();
-        Byte o2 = new Byte(2);
+        Byte o2 = new Byte((byte) 0);
         list.add(o2);
 
         try {

@@ -37,13 +37,13 @@ import java.util.ListIterator;
 
 public class IntComodifiedRemoveTest {
     @Test
-    public static void main() {
+    public void main() {
         IntLinkedList list = new IntLinkedList();
         Integer o1 = new Integer((int) 1);
         list.add(o1);
         ListIterator e = list.listIterator();
         e.next();
-        Integer o2 = new Integer(2);
+        Integer o2 = new Integer((int) 0);
         list.add(o2);
 
         try {

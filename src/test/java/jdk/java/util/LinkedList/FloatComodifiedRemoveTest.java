@@ -37,13 +37,13 @@ import java.util.ListIterator;
 
 public class FloatComodifiedRemoveTest {
     @Test
-    public static void main() {
+    public void main() {
         FloatLinkedList list = new FloatLinkedList();
         Float o1 = new Float((float) 1);
         list.add(o1);
         ListIterator e = list.listIterator();
         e.next();
-        Float o2 = new Float(2);
+        Float o2 = new Float((float) 0);
         list.add(o2);
 
         try {

@@ -37,13 +37,13 @@ import java.util.ListIterator;
 
 public class CharComodifiedRemoveTest {
     @Test
-    public static void main() {
+    public void main() {
         CharLinkedList list = new CharLinkedList();
         Character o1 = new Character((char) 1);
         list.add(o1);
         ListIterator e = list.listIterator();
         e.next();
-        Character o2 = new Character(2);
+        Character o2 = new Character((char) 0);
         list.add(o2);
 
         try {
