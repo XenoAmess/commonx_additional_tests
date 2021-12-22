@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.xenoamess</groupId>
     <artifactId>commonx_additional_tests</artifactId>
-    <version>0.9.1</version>
+    <version>0.13.1</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
     <description>Additional tests for commonx. These tests are modified from jdk
